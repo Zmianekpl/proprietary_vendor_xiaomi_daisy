@@ -856,14 +856,17 @@ service cnss_diag /system/vendor/bin/cnss_diag -q -f
     group system wifi inet net_admin sdcard_rw media_rw diag
     oneshot
 
-service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
-    class late_start
-    user system
-    group system inet net_admin wifi
-    capabilities NET_ADMIN
-
-on property:sys.shutdown.requested=*
-    stop cnss-daemon
+# cnss-daemon is used for wcn39XX ,D1S use WCN3660 wlan chip, this doesn't need cnss-daemon
+# so open wifi will start cnss-daemon and  print  CNSS related error log
+# HQ-22624  case 03593581
+#service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
+#    class late_start
+#    user system
+#    group system inet net_admin wifi
+#    capabilities NET_ADMIN
+#
+#on property:sys.shutdown.requested=*
+#    stop cnss-daemon
 
 service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
     class late_start
@@ -1233,3 +1236,6 @@ service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.andro
     disabled
     oneshot
     keycodes 114 115 116
+
+#Make MTU adjusting to D1S-3381 by zhangwei8
+write /proc/sys/net/ipv4/tcp_mtu_probing 1

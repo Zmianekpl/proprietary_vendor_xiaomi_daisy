@@ -66,6 +66,9 @@ on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
     mkdir /persist/data 0700 system system
     mkdir /persist/bms 0700 root system
+    mkdir /data/preloads 0775 system system
+    mkdir /data/preloads/media 0775 system system
+    mkdir /data/preloads/demo 0755 system system
     restorecon_recursive /persist
 
 
