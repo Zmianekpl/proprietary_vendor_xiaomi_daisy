@@ -28,8 +28,8 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.hardware.fm@1.0
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.qti.hardware.fm@1.0.so
-LOCAL_SRC_FILES_32 := proprietary/lib/vendor.qti.hardware.fm@1.0.so
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -318,18 +318,6 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := colorservice
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/app/colorservice/colorservice.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -344,7 +332,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := imssettings
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/app/imssettings/imssettings.apk
+LOCAL_SRC_FILES := proprietary/app/imssettings/imssettings.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -373,7 +361,5 @@ LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
-
-
 
 endif

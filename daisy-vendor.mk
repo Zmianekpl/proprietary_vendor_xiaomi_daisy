@@ -94,10 +94,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/daisy/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
     vendor/xiaomi/daisy/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/xiaomi/daisy/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
-    vendor/xiaomi/daisy/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
-    vendor/xiaomi/daisy/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
-    vendor/xiaomi/daisy/proprietary/lib/vendor.display.color@1.2.so:system/lib/vendor.display.color@1.2.so \
-    vendor/xiaomi/daisy/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib/vendor.display.color@1.2.so:system/lib/vendor.display.color@1.2.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/xiaomi/daisy/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/xiaomi/daisy/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/xiaomi/daisy/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
@@ -142,10 +142,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/daisy/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/xiaomi/daisy/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/xiaomi/daisy/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/xiaomi/daisy/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
-    vendor/xiaomi/daisy/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
-    vendor/xiaomi/daisy/proprietary/lib64/vendor.display.color@1.2.so:system/lib64/vendor.display.color@1.2.so \
-    vendor/xiaomi/daisy/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.display.color@1.2.so:system/lib64/vendor.display.color@1.2.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/xiaomi/daisy/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/xiaomi/daisy/proprietary/lib64/vendor.qti.hardware.factory@1.0.so:system/lib64/vendor.qti.hardware.factory@1.0.so \
     vendor/xiaomi/daisy/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
